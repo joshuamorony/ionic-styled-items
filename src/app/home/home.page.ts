@@ -7,4 +7,12 @@ import { Component } from '@angular/core';
 })
 export class HomePage {
 
+  public messages;
+
+  constructor(){
+
+    this.messages = new Array(100).fill({title: 'Hello'});
+
+  }
+
 }
